@@ -1,12 +1,26 @@
-const number1 = 20;
-const number2 = 40;
+let result;
+const angka = parseFloat(prompt("angka pertama "));
+const operator = prompt("(+,-,*,/) masukan operator");
+const angka2 = parseFloat(prompt("angka kedua: "));
 
-if (operator == "+") {
-  result = number1 + number2;
-} else if (operator == "-") {
-  result = number1 - number2;
-} else if (operator == "*") {
-  result = number1 * number2;
-} else {
-  result = number1 / number2;
+switch (operator) {
+  case "+":
+    result = angka + angka2;
+    console.log(`${result}`);
+    break;
+
+  case "-":
+    result = angka - angka2;
+    console.log(`${result}`);
+    break;
+
+  case "*":
+    result = angka * angka2;
+    console.log(`${result}`);
+    break;
+
+  case "/":
+    result = angka / angka2;
+    console.log(`${result}`);
+    break;
 }
