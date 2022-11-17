@@ -8,29 +8,41 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="kotak">
       <center>
         <h1>KALKULATOR</h1>
-        <input type="text" value="hitung di sini" id="hitung" />
-        <br />
-        <input type="button" value="1" placeholder="" onclick="dis('1')" />
-        <input type="button" value="2" placeholder="" onclick="dis('2')" />
-        <input type="button" value="3" placeholder="" onclick="dis('3')" />
-        <br />
-        <input type="button" value="4" placeholder="" onclick="dis('4')" />
-        <input type="button" value="5" placeholder="" onclick="dis('5')" />
-        <input type="button" value="6" placeholder="" onclick="dis('6')" />
-        <br />
-        <input type="button" value="7" placeholder="" onclick="dis('7')" />
-        <input type="button" value="8" placeholder="" onclick="dis('8')" />
-        <input type="button" value="9" placeholder="" onclick="dis('9')" />
-        <br />
-        <input type="button" value="+" placeholder="" onclick="dis('+')" />
-        <input type="button" value="-" placeholder="" onclick="dis('-')" />
-        <input type="button" value="X" placeholder="" onclick="dis('*')" />
-        <input type="button" value="/" placeholder="" onclick="dis('/')" />
-      </center>
-    </div>
+        <table align="center"  border="5" width="330px"> 
+          <tr>
+             <td colspan="4" class="title">Ekorkode Kalkulator</td>
+          </tr>
+          <tr> 
+             <td colspan="3"><input type="text" id="result"/></td> 
+             <td><input class="ekor" type="button" value="C" onclick="clr()"/> </td> 
+          </tr> 
+          <tr> 
+             <td><input type="button" value="1" onclick="hitung('1')"/> </td> 
+             <td><input type="button" value="2" onclick="hitung('2')"/> </td> 
+             <td><input type="button" value="3" onclick="hitung('3')"/> </td>
+             <td><input class="kode" type="button" value="+" onclick="hitung('+')"/> </td> 
+          </tr> 
+          <tr> 
+             <td><input type="button" value="4" onclick="hitung('4')"/> </td> 
+             <td><input type="button" value="5" onclick="hitung('5')"/> </td> 
+             <td><input type="button" value="6" onclick="hitung('6')"/> </td> 
+             <td><input class="kode" type="button" value="-" onclick="hitung('-')"/> </td> 
+          </tr> 
+          <tr> 
+             <td><input type="button" value="7" onclick="hitung('7')"/> </td> 
+             <td><input type="button" value="8" onclick="hitung('8')"/> </td> 
+             <td><input type="button" value="9" onclick="hitung('9')"/> </td> 
+             <td><input class="kode" type="button" value="/" onclick="hitung('/')"/> </td>  
+          </tr> 
+          <tr> 
+             <td><input type="button" value="." onclick="hitung('.')"/> </td> 
+             <td><input type="button" value="0" onclick="hitung('0')"/> </td>
+             <td><input class="ekor" type="button" value="=" onclick="hasil()"/> </td> 
+             <td><input class="kode" type="button" value="x" onclick="hitung('*')"/> </td> 
+          </tr> 
+       </table> 
     <script src="kalkulator.js"></script>
   </body>
 </html>

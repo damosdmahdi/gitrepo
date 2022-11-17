@@ -1,25 +1,11 @@
-const angka = parseFloat(prompt("angka pertama "));
-const operator = prompt("(+,-,*,/) masukan operator");
-const angka2 = parseFloat(prompt("angka kedua: "));
-
-switch (operator) {
-  case "+":
-    result = angka + angka2;
-    alert(`${result}`);
-    break;
-
-  case "-":
-    result = angka - angka2;
-    alert(`${result}`);
-    break;
-
-  case "*":
-    result = angka * angka2;
-    alert(`${result}`);
-    break;
-
-  case "/":
-    result = angka / angka2;
-    alert(`${result}`);
-    break;
+function hitung(val) {
+  document.getElementById("result").value += val;
+}
+function hasil() {
+  let x = document.getElementById("result").value;
+  let y = eval(x);
+  document.getElementById("result").value = y;
+}
+function clr() {
+  document.getElementById("result").value = "";
 }
